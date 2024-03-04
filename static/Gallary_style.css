@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+
+  .header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(50, 49, 56, 0.5),rgba(66, 64, 78, 0.5)),url(../static/img27.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 8%;
+    transition: background 1s;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+nav .logo img{
+    width: 40px;
+    margin-right: 10px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 800;
+}
+nav:hover{
+    background: #fff;
+}
+
+nav:hover .logo{
+    color: #333;
+}
+
+nav:hover ul li a{
+    color: #333;
+}
+  
+  body {
+    height: 100vh;
+    padding-top: 0px;
+    background-color: #131313;
+  }
+  h1 {
+    text-align: center;
+    padding-bottom: 65px;
+    padding-top: 90px;
+    color: #14addc;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: xx-large;
+  }
+  .gallery {
+    width: 1000px;
+    margin: 0 auto;
+  
+    position: relative;
+  }
+  
+  .gallery__photo {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+  
+    position: absolute;
+    transition: all 0.2s;
+    z-index: 10;
+    outline-offset: 20px;
+  }
+  
+  .gallery__photo--p1 {
+    top: 0;
+    left: 0;
+  }
+  
+  .gallery__photo--p2 {
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .gallery__photo--p3 {
+    top: 40px;
+    left: 20%;
+  }
+  
+  .gallery__photo--p4 {
+    top: 60px;
+    left: 40%;
+  }
+  
+  .gallery__photo--p5 {
+    top: 40px;
+    left: 60%;
+    z-index: 2;
+  }
+  
+  .gallery__photo:hover {
+    outline: 15px solid #14addc;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05) translateY(-20px);
+    z-index: 20;
+  }
+  .gallery:hover .gallery__photo:not(:hover) {
+    transform: scale(0.9);
+  }
